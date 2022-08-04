@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WonderEarthHotel_X.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+    <script src="fontawesome/js/all.js"></script>
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    
+
+<footer>
+    <div id="footer1" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <p>
+                    <br />
+                    <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton8" runat="server" OnClick="LinkButton8_Click" >Admin Login</asp:LinkButton>
+                    &nbsp;
+                    <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton9" runat="server" OnClick="LinkButton9_Click" >User Log In</asp:LinkButton>
+                    &nbsp;
+                    <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton15" runat="server" OnClick="LinkButton15_Click" >Your Profile</asp:LinkButton>
+                    &nbsp;
+                    <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"  >Hello</asp:LinkButton>
+                    &nbsp;
+                    <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click"  >Log Out</asp:LinkButton>
+                    &nbsp;
+                    <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click"  >HOME</asp:LinkButton>
+                    &nbsp;
+                    <asp:LinkButton class="footerlinks btn btn-lg btn-block btn-dark" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click"   >User Management</asp:LinkButton>
+                    &nbsp;
+                    <p>
+                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-dark" runat="server" Text="My Github" OnClick="Button1_Click"  /></p>
+                </p>
+                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-dark" runat="server" Text="Visit Me on Facebook" OnClick="Button2_Click"   />
+                <br />
+
+            </div>
+
+        </div>
+    </div>
+    <div id="footer2" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <br />
+                <p style="color:#000000;">&copy All right Reversed. Rafi's Website </p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+    </form>
+</body>
+</html>
